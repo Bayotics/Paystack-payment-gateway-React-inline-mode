@@ -20,12 +20,12 @@ const PaystackImplementation = () => {
     }
 
     return(
-        <div>
-            <div>This is the PaystackImplementation Component</div>
-            <form id="paymentForm" onSubmit={payWithPaystack}>
-                <div className="form-group">
+        <div className="bg-gray-100 h-screen w-full pt-36">
+            <div className="w-96 h-96 ml-96 border">
+            <form className= "grid mt-24 gap-4 grid-cols-2" id="paymentForm" onSubmit={payWithPaystack}>
+                <div className="form-group ">
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" value={email} onChange = {(e) => setEmail(e.target.value)} id="email-address" required />
+                    <input className="border rounded-md" type="email" value={email} onChange = {(e) => setEmail(e.target.value)} id="email-address" required />
                 </div>
                 <div className="form-group">
                     <label htmlFor="amount">Amount</label>
@@ -40,9 +40,11 @@ const PaystackImplementation = () => {
                     <input type="text" value={lastName} onChange = {(e) => setLastName(e.target.value)} id="email-address" required />
                 </div>
                 <div className="form-submit">
-                    <button type="submit"> Pay </button>
+                    <button className = "ml-36 rounded-md border bg-gray w-24" type="submit"> Pay </button>
                 </div>
             </form>
+            </div>
+            
         </div>
         
     )
