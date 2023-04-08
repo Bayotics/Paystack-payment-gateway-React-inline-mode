@@ -21,7 +21,7 @@ const PaystackImplementation = () => {
 
     return(
         <div className="bg-gray-100 h-screen w-full pt-36">
-            <div className="w-96 h-96 ml-96 border">
+            <div className="w-96 h-96 ml-96 border shadow-2xl">
             <form className= "grid mt-24 gap-4 grid-cols-2" id="paymentForm" onSubmit={payWithPaystack}>
                 <div className="form-group ">
                     <label htmlFor="email">Email Address</label>
