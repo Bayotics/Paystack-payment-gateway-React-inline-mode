@@ -12,6 +12,24 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+form-submit{
+width: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 4px;
+  background: #44b669;
+  background: -webkit-gradient(linear, left top, left bottom, from(#44b669), to(#40ad57));
+  background: linear-gradient(180deg, #44b669 0, #40ad57);
+  border: 1px solid #49a861;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+  outline: none;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 42px;
+  cursor: pointer;
+  position: relative;
+}
 
 .App-header {
   background-color: #282c34;
