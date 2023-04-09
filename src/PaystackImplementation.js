@@ -8,7 +8,6 @@ const PaystackImplementation = () => {
     const [lastName, setLastName] = useState("");
     const payWithPaystack = (event) => {
         event.preventDefault()
-        console.log("Working Fine!!!!!!!!!!!!!!!!!")
         const paystack = new PaystackPop();
         paystack.newTransaction ({
             key: "pk_test_8d9e427702c5b457180503dd7a71fc3c41e276de",
@@ -26,7 +25,7 @@ const PaystackImplementation = () => {
             <h4 className="text-sm mt-5">(Test Mode)</h4>
             <form className= "grid mt-10 gap-4 grid-cols-2" id="paymentForm" onSubmit={payWithPaystack}>
                 <div className="form-group ">
-                    <label htmlFor="email">Email Address</label>
+                    <label htmlFor="email">Email</label>
                     <input className="border h-8 w-44 rounded-md" type="email" value={email} onChange = {(e) => setEmail(e.target.value)} id="email-address" required />
                 </div>
                 <div className="form-group">
